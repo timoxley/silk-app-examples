@@ -9,7 +9,7 @@ class PhotoController extends SilkControllerBase {
 	function test($params) {
 		add_component_dependent("stub");
 		$stub = new Stub();
-		
+		$photo = new Photo();		
 	}
 	/**
 	 *
