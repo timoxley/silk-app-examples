@@ -8,6 +8,6 @@
 class PoolController extends SilkControllerBase {
 	
 	function dashboard($params) {
-		echo "Dashboard.";
 	}
+
 }
