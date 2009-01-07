@@ -5,7 +5,7 @@ Using smarty to loop through results.
 <table>
 {section name=mysec loop=$teams}
 {strip}
-   <tr bgcolor="{cycle values="#FFFFCC,#DDDDDD"}">
+   <tr bgcolor="{cycle values="#BBBBBB,#DDDDDD"}">
    	  <td>Name</td>
       <td>{$teams[mysec].name}</td>
    </tr>

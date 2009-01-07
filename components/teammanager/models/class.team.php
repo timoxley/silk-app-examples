@@ -1,13 +1,13 @@
 <?php
 class Team extends SilkObjectRelationalMapping {
 	var $table = "teams";
-	
+
 	function __construct()
     {
         parent::__construct();
 //        $this->post_date = new CmsDateTime();
     }
-    
+
     function setup()
     {
 //        $this->create_belongs_to_association('author', 'CmsUser', 'author_id');

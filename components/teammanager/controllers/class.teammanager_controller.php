@@ -1,15 +1,15 @@
 <?php
 
-class TeamManagerController extends SilkControllerBase {
+class SeasonManagerController extends SilkControllerBase {
 
-	function listTeams($params) {
-		$team = new Team();
-		$teams = $team->find_all();
-		$this->set("teams", $teams);
+	function listSeasons($params) {
+		$season = new Season();
+		$seasons = $season->find_all(array('order' => 'name ASC'));
+		$this->set("seasons", $seasons);
+	}
 
-//		foreach( $teams as $t ) {
-//			echo "team: $t->name<br />";
-//		}
+	function createSeason($params) {
+
 	}
 }
 ?>
