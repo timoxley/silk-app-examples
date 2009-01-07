@@ -14,7 +14,8 @@ class PhotoController extends SilkControllerBase {
 		$findme = new FindMeController();
 		$findme->loveme();
 		$photo2 = new Photo2();
-		var_dump($photo2);
+		$this->set("what", "hello nurse");
+		$params["whatever"] = "More stuff";
 	}
 	/**
 	 *

@@ -1,3 +1,14 @@
 <h1>List Teams</h1>
 
-Use smarty to loop through results somehow.
+Using smarty to loop through results.
+
+<table>
+{section name=mysec loop=$teams}
+{strip}
+   <tr bgcolor="{cycle values="#aaaaaa,#bbbbbb"}">
+   	  <td>Name</td>
+      <td>{$teams[mysec].name}</td>
+   </tr>
+{/strip}
+{/section}
+</table>
