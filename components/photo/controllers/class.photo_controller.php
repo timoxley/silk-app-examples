@@ -4,13 +4,15 @@
  * @author Greg Froese
  *
  */
+add_component_dependent("stub");
+
 class PhotoController extends SilkControllerBase {
 
 	function test($params) {
-		add_component_dependent("stub");
 		$stub = new Stub();
 		$photo = new Photo();
 		$findme = new FindMeController();
+		$findme->loveme();
 		$photo2 = new Photo2();
 		var_dump($photo2);
 	}
