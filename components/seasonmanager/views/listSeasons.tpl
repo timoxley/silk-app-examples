@@ -7,13 +7,19 @@ Using smarty to loop through results.
 	<th>Name</th>
 	<th>Start - End</th>
 </tr>
-{section name=mysec loop=$seasons}
+{foreach from=$seasons item=season key=key}
 {strip}
    <tr bgcolor="{cycle values="#BBBBBB,#DDDDDD"}">
-      <td>{$seasons[mysec].name}</td>
-      <td>{$seasons[mysec].start_year} - {$seasons[mysec].end_year}</td>
-      <td>{$seasons[mysec]->stages}</td>
+      <td>{$season.name}</td>
+      <td>{$season.start_year} - {$season.end_year}</td>
+      <td>
+	      {foreach from=$season->stages item=entry key=name}
+	      {strip}
+	      {$entry.name}<br />
+	      {/strip}
+	      {/foreach}
+	  </td>
    </tr>
 {/strip}
-{/section}
+{/foreach}
 </table>
