@@ -11,7 +11,7 @@ class PhotoController extends SilkControllerBase {
 	function test($params) {
 		$stub = new Stub();
 		$photo = new Photo();
-//		$findme = new FindMeController();
+		$findme = new FindMeController();
 		$findme->loveme();
 		$photo2 = new Photo2();
 		$this->set("what", "hello nurse");

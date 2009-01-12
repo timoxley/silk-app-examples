@@ -4,6 +4,7 @@ class SilkUtilsController extends SilkControllerBase {
 	
 	function show_vars() {
 		$this->mydump("Class Dirs", $GLOBALS["class_dirs"]);
+		$this->mydump("Routes", SilkRoute::get_routes());
 	}
 	
 	function mydump($myname, $var) {

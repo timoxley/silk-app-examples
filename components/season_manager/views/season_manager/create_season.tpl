@@ -1,6 +1,6 @@
 <h1>Create a new season</h1>
 
-{form remote='true' url='/silk/season_manager/createSeasonStore'}
+{form url='/silk/season_manager/createSeasonStore'}
 
 <table>
 	<tr>
@@ -17,7 +17,7 @@
 	</tr>
 	<tr>
 		<td>Status:</td>
-		<td>{select name="status"}{options items="0,Inactive,1,Active"}{/select}</td>
+		<td>{select name="status_id"}{options items="0,Inactive,1,Active"}{/select}</td>
 	</tr>
 	<tr>
 		<td>{submit}</td>
