@@ -17,8 +17,8 @@ class Season extends SilkObjectRelationalMapping {
     }
 
 	public function validate() {
-		if( empty($this->seasonName) ) $this->add_validation_error("Seasons must have a name.");
-
+		if( empty($this->params["name"]) ) $this->add_validation_error("Seasons must have a name.");
+//		if( intval($this->params["startYear"] < date("yyyy"))) $this->add_validation_error("Season cannot exist in the past.");
 	}
 
 }
