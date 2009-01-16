@@ -12,5 +12,9 @@ class SilkUtilsController extends SilkControllerBase {
 		var_dump($var);
 		echo "</pre>";
 	}
+	
+	function index() {
+		echo "Here is the index function<br />";
+	}
 }
 ?>
