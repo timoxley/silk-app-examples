@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/31/trunk/components/season_manager/views/season_manager
+END
+list_seasons.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31/trunk/components/season_manager/views/season_manager/list_seasons.tpl
+END
+create_season_store.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31/trunk/components/season_manager/views/season_manager/create_season_store.tpl
+END
+create_season.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/trunk/components/season_manager/views/season_manager/create_season.tpl
+END
+edit_season.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31/trunk/components/season_manager/views/season_manager/edit_season.tpl
+END
